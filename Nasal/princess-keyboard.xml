@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <key n="100">
+    <name>d</name>
+    <desc>Crew door</desc>
+    <binding>
+      <command>nasal</command>
+      <script>doors.pag.toggle();</script>
+    </binding>
+    <binding>
+      <command>nasal</command>
+      <script>doors.pad.toggle();</script>
+    </binding>
+    <binding>
+      <command>nasal</command>
+      <script>doors.pbg.toggle();</script>
+    </binding>
+    <binding>
+      <command>nasal</command>
+      <script>doors.pbd.toggle();</script>
+    </binding>
+  </key>
+  <!--
+  <key n="125">
+    <name>}</name>
+    <desc>Engine Autostart</desc>
+    <binding>
+      <command>nasal</command>
+      <script>engines.autostart();</script>
+    </binding>
+  </key>
+  -->
+</PropertyList>
