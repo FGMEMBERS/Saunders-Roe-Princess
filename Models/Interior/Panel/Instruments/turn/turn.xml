@@ -55,13 +55,13 @@
     <min>-1.1</min>
     <max>1.1</max>
     <interpolation>
-      <entry><ind> -1.1 </ind><dep> -6.2 </dep></entry>
-      <entry><ind>  1.1 </ind><dep>  6.2 </dep></entry>
+      <entry><ind> -1.1 </ind><dep> -6 </dep></entry>
+      <entry><ind>  1.1 </ind><dep>  6 </dep></entry>
     </interpolation>
     <center>
       <x-m> 0.00 </x-m>
       <y-m> 0.00 </y-m>
-      <z-m> 0.22 </z-m>
+      <z-m> 0.15 </z-m>
     </center>
     <axis>
       <x> -1 </x>

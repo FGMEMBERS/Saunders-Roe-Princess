@@ -5,7 +5,7 @@
   <sim include="Nasal/views.xml">
 
     <description>Saunders Roe Princess (YASim)</description>
-    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <author>Emmanuel BARANGER (3D), Buckaroo (FDM)</author>
     <status>Dev</status>
     <aircraft-version>1.3</aircraft-version>
     
@@ -53,6 +53,16 @@
         <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>  
         <float n="2" alias="/position/gear-agl-m">  0 </float>                <!-- 2 altitude for MP shadow -->
         <float n="3" alias="/position/altitude-ft">  0 </float>               <!-- 3 altitude for trail -->
+        <float n="4" alias="/engines/engine[0]/rpm">  0 </float>              <!--  -->
+        <float n="5" alias="/engines/engine[1]/rpm">  0 </float>              <!--  -->
+        <float n="6" alias="/engines/engine[2]/rpm">  0 </float>              <!--  -->
+        <float n="7" alias="/engines/engine[3]/rpm">  0 </float>              <!--  -->
+        <float n="8" alias="/engines/engine[4]/rpm">  0 </float>              <!--  -->
+        <float n="9" alias="/engines/engine[5]/rpm">  0 </float>              <!--  -->
+        <float n="10" alias="/engines/engine[6]/rpm">  0 </float>              <!--  -->
+        <float n="11" alias="/engines/engine[7]/rpm">  0 </float>              <!--  -->
+        <float n="12" alias="/engines/engine[8]/rpm">  0 </float>              <!--  -->
+        <float n="13" alias="/engines/engine[9]/rpm">  0 </float>              <!--  -->
         <string n="0" type="string" />
         <string n="9" type="string" />                                        <!-- string[9] reserved for bombable mode -->
       </generic>
@@ -78,7 +88,126 @@
     <keyboard include="Nasal/princess-keyboard.xml">
     </keyboard>
   </input>
+  <!--
+  <controls>
+    <engines>
+      <engine n="0">
+        <condition>0</condition>
+        <cutoff>0</cutoff>
+        <starter>0</starter>
+        <throttle type="double">0</throttle>
+      </engine>
+      <engine n="1">
+        <condition>0</condition>
+        <cutoff>0</cutoff>
+        <starter>0</starter>
+        <throttle type="double">0</throttle>
+      </engine>
+      <engine n="2">
+        <condition>0</condition>
+        <cutoff>0</cutoff>
+        <starter>0</starter>
+        <throttle type="double">0</throttle>
+      </engine>
+      <engine n="3">
+        <condition>0</condition>
+        <cutoff>0</cutoff>
+        <starter>0</starter>
+        <throttle type="double">0</throttle>
+      </engine>
+      <engine n="4">
+        <condition>0</condition>
+        <cutoff>0</cutoff>
+        <starter>0</starter>
+        <throttle type="double">0</throttle>
+      </engine>
+      <engine n="5">
+        <condition>0</condition>
+        <cutoff>0</cutoff>
+        <starter>0</starter>
+        <throttle type="double">0</throttle>
+      </engine>
+      <engine n="6">
+        <condition>0</condition>
+        <cutoff>0</cutoff>
+        <starter>0</starter>
+        <throttle type="double">0</throttle>
+      </engine>
+      <engine n="7">
+        <condition>0</condition>
+        <cutoff>0</cutoff>
+        <starter>0</starter>
+        <throttle type="double">0</throttle>
+      </engine>
+      <engine n="8">
+        <condition>0</condition>
+        <cutoff>0</cutoff>
+        <starter>0</starter>
+        <throttle type="double">0</throttle>
+      </engine>
+      <engine n="9">
+        <condition>0</condition>
+        <cutoff>0</cutoff>
+        <mixture>0</mixture>
+        <propeller-pitch>0</propeller-pitch>
+        <throttle type="double">0</throttle>
+      </engine>
+    </engines>
+  </controls>
   
+  <engines>
+    <engine n="0">
+      <running>0</running>
+      <rpm>0</rpm>
+      <fuel-flow-pph type="float">0</fuel-flow-pph>
+    </engine>
+    <engine n="1">
+      <running>0</running>
+      <rpm>0</rpm>
+      <fuel-flow-pph type="float">0</fuel-flow-pph>
+    </engine>
+    <engine n="2">
+      <running>0</running>
+      <rpm>0</rpm>
+      <fuel-flow-pph type="float">0</fuel-flow-pph>
+    </engine>
+    <engine n="3">
+      <running>0</running>
+      <rpm>0</rpm>
+      <fuel-flow-pph type="float">0</fuel-flow-pph>
+    </engine>
+    <engine n="4">
+      <running>0</running>
+      <rpm>0</rpm>
+      <fuel-flow-pph type="float">0</fuel-flow-pph>
+    </engine>
+    <engine n="5">
+      <running>0</running>
+      <rpm>0</rpm>
+      <fuel-flow-pph type="float">0</fuel-flow-pph>
+    </engine>
+    <engine n="6">
+      <running>0</running>
+      <rpm>0</rpm>
+      <fuel-flow-pph type="float">0</fuel-flow-pph>
+    </engine>
+    <engine n="7">
+      <running>0</running>
+      <rpm>0</rpm>
+      <fuel-flow-pph type="float">0</fuel-flow-pph>
+    </engine>
+    <engine n="8">
+      <running>0</running>
+      <rpm>0</rpm>
+      <fuel-flow-pph type="float">0</fuel-flow-pph>
+    </engine>
+    <engine n="9">
+      <running>0</running>
+      <rpm>0</rpm>
+      <fuel-flow-pph type="float">0</fuel-flow-pph>
+    </engine>
+  </engines>
+  -->
   <nasal>
     <doors>
       <file>Aircraft/Saunders-Roe-Princess/Nasal/doors.nas</file>

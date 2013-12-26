@@ -66,25 +66,6 @@
     </offsets>
   </model>
 
-  <!-- AI -->
-  <model>
-    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/attitude/attitude.xml</path>
-    <offsets>
-      <x-m>  0.00 </x-m>
-      <y-m> -0.55 </y-m>
-      <z-m>  0.09 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/attitude/attitude.xml</path>
-    <offsets>
-      <x-m> 0.00 </x-m>
-      <y-m> 0.55 </y-m>
-      <z-m> 0.09 </z-m>
-    </offsets>
-  </model>
-
   <!-- ALT -->
   <model>
     <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/Altimeter/altimeter.xml</path>
@@ -99,8 +80,27 @@
     <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/Altimeter/altimeter.xml</path>
     <offsets>
       <x-m> 0.00 </x-m>
-      <y-m> 0.47 </y-m>
+      <y-m> 0.44 </y-m>
       <z-m> 0.09 </z-m>
+    </offsets>
+  </model>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/attitude/attitude.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.536 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/attitude/attitude.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.536 </y-m>
+      <z-m> 0.090 </z-m>
     </offsets>
   </model>
 
@@ -109,7 +109,7 @@
     <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
       <x-m>  0.00 </x-m>
-      <y-m> -0.47 </y-m>
+      <y-m> -0.44 </y-m>
       <z-m>  0.09 </z-m>
     </offsets>
   </model>
@@ -123,13 +123,13 @@
     </offsets>
   </model>
 
-  <!-- VSI -->
+  <!-- AIRSPEED-->
   <model>
     <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/AirSpeed/airspeed.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.630 </y-m>
-      <z-m>  0.013 </z-m>
+      <z-m>  0.003 </z-m>
     </offsets>
   </model>
 
@@ -137,8 +137,8 @@
     <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/AirSpeed/airspeed.xml</path>
     <offsets>
       <x-m> 0.000 </x-m>
-      <y-m> 0.470 </y-m>
-      <z-m> 0.013 </z-m>
+      <y-m> 0.440 </y-m>
+      <z-m> 0.003 </z-m>
     </offsets>
   </model>
 
@@ -147,17 +147,17 @@
     <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/adf/rmi.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
-      <y-m> -0.550 </y-m>
-      <z-m>  0.008 </z-m>
+      <y-m> -0.536 </y-m>
+      <z-m> -0.008 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/adf/rmi.xml</path>
     <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.550 </y-m>
-      <z-m> 0.008 </z-m>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.536 </y-m>
+      <z-m> -0.008 </z-m>
     </offsets>
   </model>
 
@@ -166,8 +166,8 @@
     <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
-      <y-m> -0.470 </y-m>
-      <z-m>  0.013 </z-m>
+      <y-m> -0.440 </y-m>
+      <z-m>  0.003 </z-m>
     </offsets>
   </model>
 
@@ -176,7 +176,7 @@
     <offsets>
       <x-m> 0.000 </x-m>
       <y-m> 0.630 </y-m>
-      <z-m> 0.013 </z-m>
+      <z-m> 0.003 </z-m>
     </offsets>
   </model>
 
@@ -185,8 +185,8 @@
     <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/flaps/flaps.xml</path>
     <offsets>
       <x-m>  0.001 </x-m>
-      <y-m> -0.470 </y-m>
-      <z-m> -0.060 </z-m>
+      <y-m> -0.440 </y-m>
+      <z-m> -0.080 </z-m>
     </offsets>
   </model>
 
@@ -194,8 +194,54 @@
     <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/flaps/flaps.xml</path>
     <offsets>
       <x-m>  0.001 </x-m>
-      <y-m>  0.470 </y-m>
-      <z-m> -0.060 </z-m>
+      <y-m>  0.630 </y-m>
+      <z-m> -0.080 </z-m>
+    </offsets>
+  </model>
+
+  <!-- RPM -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/engines/rpm/rpm0-9.xml</path>
+    <offsets>
+      <x-m>  0.00 </x-m>
+      <y-m> -0.18 </y-m>
+      <z-m>  0.09 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/engines/rpm/rpm1-8.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.096 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/engines/rpm/rpm2-7.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.012 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/engines/rpm/rpm3-6.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.072 </y-m>
+      <z-m> 0.090 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Panel/Instruments/engines/rpm/rpm4-5.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.156 </y-m>
+      <z-m> 0.090 </z-m>
     </offsets>
   </model>
 

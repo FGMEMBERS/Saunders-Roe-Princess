@@ -5,7 +5,7 @@
   <sim>
 
     <description>Saunders Roe Princess (YASim)</description>
-    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <author>Emmanuel BARANGER (3D), Buckaroo (FDM)</author>
     <status>Dev</status>
     <aircraft-version>1.3</aircraft-version>
     <flight-model>yasim</flight-model>
