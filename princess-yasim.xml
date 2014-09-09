@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Saunders Roe Princess : BARANGER Emmanuel (2013)
+                Updated by : Buckaroo (December 2013)
+
+           source          : http://en.wikipedia.org/wiki/Saunders-Roe_Princess
+
+           Wingspan        :  219 ft 6 in  ( 66.90 m  ) with wingtip floats retracted
+           Lenght          :  148 ft       ( 45.00 m  )
+           Height          :   55 ft 9 in  ( 16.99 m  )
+           Empty mass      : 190000 lb     ( 86183 kg )
+           Fuel capacity   : 14000 imp gal ( 63645.3 l (16813.3 US gal) in four integral inner wing tanks.
+           Engines         : 8 x Bristol Coupled-Proteus 610 Coupled turboprop engines, 2500 hp each + 820 lbf residual thrust at 10000 rpm at sea level.
+                           : 2 x Bristol Proteus 600 Turboprop engines, 2500 hp each + 820 lbf residual thrust at 10,000 rpm.
+           Cruise speed    :    579 km/h   ( 313 kts  ) at 32500 ft (  9906.00 m )
+           Maximum speed   :    611 km/h   ( 330 kts  ) at 37000 ft ( 11277.60 m )
+           Stall speed     :    181 km/h   (  98 kts  ) flaps and floats down
+           
+      Buckaroo revision notes:
+      
+        Max takeoff weight: 320,000 lbs
+        Max landing weight: 250,000 lbs
+        Flight tests should be conducted with a weight of 225k lbs to 315k lbs, with CG about 32% MAC.
+        Test weight: 250k lbs
+
+        Stall should occur at about 80% elevator throw. This is hard to achieve with YASim without making the
+        elevator too strong or positiong the CG too far back, but I can get it to about 90% at test weight.
+        Stall should begin with no wing drop but will exhibit wing drop well into the stall. Stalls are not
+        vicious and have plenty of buffet warning.
+
+        In flight tests, model airspeed at altitude 30k' comes very close to recorded real flight tests of ~212 knots EAS.
+-->
+<airplane mass="190000">
+
+  <approach speed="98" aoa="5" fuel="0.2">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[2]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[2]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[3]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[3]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[4]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[4]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[4]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[5]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[5]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[5]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[6]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[6]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[6]/condition" value="1"/>
+    
+    <control-setting axis="/controls/engines/engine[7]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[7]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[7]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[8]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[8]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[8]/condition" value="1"/>
+    
+    <control-setting axis="/controls/engines/engine[9]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[9]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[9]/condition" value="1"/>
+    
+    <control-setting axis="/controls/flight/flaps" value="1"/>
+    <control-setting axis="/controls/gear/gear-down" value="1"/>
+  </approach>
+
+  <cruise speed="300" alt="3250" fuel="0.7"> 
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[2]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[2]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[2]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[3]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[3]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[4]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[4]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[4]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[5]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[5]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[5]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[6]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[6]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[6]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[7]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[7]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[7]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[8]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[8]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[8]/condition" value="1"/>
+
+    <control-setting axis="/controls/engines/engine[9]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[9]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/engines/engine[9]/condition" value="1"/>
+
+    <control-setting axis="/controls/flight/flaps" value="0"/>
+    <control-setting axis="/controls/gear/gear-down" value="0"/>
+  </cruise>
+
+  <cockpit x="20.86425" y="0.78046" z="-1.89825"/>
+  
+  <!-- Buckaroo revision notes:
+         Revised fuselage body.
+  -->
+  <fuselage ax=" 22.297" ay="0" az="-3.500" bx=" 19.630" by="0" bz="-3.672" width="4.487" taper="0.330" midpoint="1" cx="1.5" cy="1.5"/>
+  <fuselage ax=" 19.630" ay="0" az="-3.672" bx="  2.944" by="0" bz="-3.672" width="4.487" taper="1.000" midpoint="1" cx="1.5" cy="1.5"/>
+  <fuselage ax="  2.944" ay="0" az="-3.672" bx="-13.770" by="0" bz="-3.145" width="4.487" taper="0.576" midpoint="0" cx="1.5" cy="1.5"/>
+  <fuselage ax="-13.770" ay="0" az="-3.145" bx="-21.241" by="0" bz="-1.797" width="2.583" taper="0.400" midpoint="0"/>
+
+  <!-- Buck notes:
+  
+         Wing and stabilizer forms revised.
+
+         The primary airfoil is proprietary, but the tip uses an NACA 4415. The 4415 is a moderately high-camber airfoil.
+         The prime airfoil is even thicker at 18%, probably for structural reasons. I'm using a fairly modest camber to avoid getting into
+         YASim moment issues. The NACA 4415 stalls at about 12 degrees, so I'm assuming the main airfoil stalls similarly. A width
+         of 8 gives a reasonable stall.
+
+         Both prime and root airfoils seem to have a slight aft trailing undercamber. I suspect this is to counter moment
+         effects, like a flying wing. I believe I read somewhere that the horizontal stabilizer is designed for a
+         slight lifting effect, so the wing would need some ability to reduce the pitching moment. Just speculation.
+
+         Incidence is recorded as 4.5 degrees. There is no dihedral. There outboard wing segments have a 2 degree washout.
+
+         Flaps are slotted type.
+         Maximum deflection is 45 degrees.
+         Positions at 15, 30 and 45 degrees have recorded Vf speeds: 165, 156, 136 kts, but additional flap positions 
+         are also recorded for various takeoff attitudes: 10, 20 degrees, so flaps need more than 3 detents.
+         I'm not yet sure if the flaps are dentented or not. A detent every 5 degrees is probably reasonable.
+-->
+  <wing x="2.551" y="1" z="-1.513"
+        chord="9.745"
+        length="14.857"
+        taper="0.857"
+        sweep="-0.66"
+        dihedral="0"
+        incidence="4.5"
+        camber="0.10">
+        <stall aoa="12" width="8" peak="1.5"/> 
+        <flap0 start="0.046" end="1" lift="1.4" drag="2.5"/>
+        
+        <control-input axis="/controls/flight/flaps" control="FLAP0"/>
+        
+        <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+        
+        <control-speed control="FLAP0" transition-time="10"/>
+  </wing>
+
+  <!-- Aileron movement is 25 degrees in either direction. -->
+  <mstab x="2.722" y="15.856" z="-1.4"
+        chord="8.352"
+        length="16.230"
+        taper="0.493"
+        sweep="7"
+        dihedral="0"
+        incidence="2.5"
+        camber="0.10">
+        <stall aoa="12" width="8" peak="1.5"/> 
+        <flap0 start="0.1" end="0.95" lift="1.15" drag="1.15"/>
+        
+        <control-input axis="/controls/flight/aileron" control="FLAP0" split="true"/>
+        <control-input axis="/controls/flight/aileron-trim" control="FLAP0" split="true"/>
+        
+        <control-output control="FLAP0" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+        <control-output control="FLAP0" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+  </mstab>
+
+  <!-- Buck notes:
+  
+         Elevator movement is 25 degrees up, 20 degrees down.
+         The stabilizer might have some positive lift, but I haven't been able to confirm this so I'm using
+         an uncambered airfoil.
+         Lift is a little greater than I like, but the results work well and the Princess elevator was noted for
+         being very powerful, a little too powerful according to official flight tests.
+         Physical stabilizer incidence is 2 degrees, but of course YASim will set this for the FDM.
+  -->
+  <hstab x="-18.51343" y="0" z="0.42790"
+         chord="6.732"
+         length="11.616"
+         taper="0.25"
+         dihedral="12"
+         sweep="5.8"
+         camber="0.0">
+         <stall aoa="18" width="4" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.7" drag="1.4"/>
+         <control-input axis="/controls/flight/elevator" control="FLAP0" />
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </hstab>
+
+  <!-- Buck notes:
+  
+         Rudder movement is 30 degrees in either direction.
+         The rudder may be a little too effective. I did not conduct sideslip or crosswind tests.
+  -->
+  <vstab x="-17.94069" y="0" z="-1.14895"
+         chord="8.994"
+         length="9.618"
+         taper="0.4"
+         sweep="10">
+         <stall aoa="18" width="4" peak="1.5"/>
+         <flap0 start="0.1" end="0.95" lift="1.67" drag="1.7"/>
+         <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+         <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+         <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
+  </vstab>
+
+  <!--  Bristol Proteus
+  
+                 source            : http://en.wikipedia.org/wiki/Bristol_Coupled-Proteus_610
+
+                 type              : Turboprop
+                 power cruise      : 3320 hp + 1200 lb residual thrust giving 3780 hp
+                 weight            : 2850 lb ( 1293 kg )
+                 Propellers        : 4-bladed de Havilland constant speed, quick-feathering Duralumin propellers. 16 ft 6 in ( 5.03 m ) diameter
+
+                 Left wing 0 2 4 .......  6 8 9 right wing
+                             1 3          5 7
+                             
+        Buck notes:
+        
+          Nominal ratings, Proteus 600 and 610 (coupled):
+            maximum @ sea level: 10000 CRPM, 2500 SHP, + 820 lbs jet thrust (900 propeller RPM)
+            max continuous @ 5000': 9500 CRPM, 2050 SHP + 700 lbs jet thrust (810 propeller RPM)
+            
+          These are real-world values. The engines delivered to the Princess prototype did not deliver the
+          original design power.
+
+          The thermal ratings (power and altitude) for these engines are guesses. For power I'm using the base SHP plus
+          10% SHP to account for residual thrust. Altitude is a wild guess. Performance at high altitudes seems pretty good,
+          giving ~212 KIAS (330+ KTAS), so power levels up there seem OK. If low-level power seems too high, reduce the
+          flat-rating slightly.
+          BSFC is a guess at a value that may be reasonable for older turboprops.
+          N2 idle values based on real engine RPM data.
+
+          Propellers:
+            DeHavilland 4/6000/6 single, 4/6000/6-7.5 coupled
+            16.5' (5.029m) diameter
+            Reduction gearing: 0.0877 single, 0.084 coupled
+            Pitch settings (at 72" radius) in degrees:
+            single    coupled
+            front rear
+            reverse   -31   -     -
+            superfine   -  -5.5  -6
+            fine       23  10     9.5
+            feathered  83  82    81.5
+            
+            Moment:
+              No idea of propeller weight, but even a conservative guess of 200 kg would give a moment over 600 using the
+              disk method, and the rod method would be much higher. These are big propellers and should take time to spin up or down.
+              Fine-stop is a guess, tends to work better than the default, but needs tweaking. The props have a minimum approach
+              idle of 550 RPM. Minimum ground idle is about 270 RPM.
+              Propellers are reversible. YASim doesn't currently simulate this, but it could be done with thrusters. Syd Adam's
+              DHC-6 provides a good example.
+  -->
+  <!-- #0 engine -->
+  <propeller x="5.86323" y="15.85412" z="-1.24129"
+             mass="2850"
+             moment="600"
+             radius="2.515"
+             cruise-speed="300"
+             cruise-rpm="800"
+             cruise-power="2250"
+             cruise-alt="15000"
+             min-rpm="600"
+             max-rpm="900"
+             fine-stop="0.5"
+             coarse-stop="4.0">
+    <actionpt x="8.37137" y="15.83523" z="-1.30906"/>
+    <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
+    <turbine-engine eng-power="2750"
+                    eng-rpm="900"
+                    alt="10000" 
+                    flat-rating="2750"
+                    n2-low-idle="32"
+                    n2-high-idle="65"
+                    n2-max="100"
+                    bsfc="0.65"> 
+      <control-input axis="/controls/engines/engine[0]/condition" control="CONDLEVER"/>
+      <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+    </turbine-engine>
+  </propeller>
+
+  <!-- #1 engine -->
+  <propeller x="6.46777" y="11.46104" z="-1.30931"
+             mass="2850"
+             moment="-600"
+             radius="2.515"
+             cruise-speed="300"
+             cruise-rpm="800"
+             cruise-power="2250"
+             cruise-alt="15000"
+             min-rpm="600"
+             max-rpm="900"
+             fine-stop="0.5"
+             coarse-stop="4.0">
+    <actionpt x="8.93177" y="10.65662" z="-1.30906"/>
+    <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
+    <turbine-engine eng-power="2750"
+                    eng-rpm="900"
+                    alt="10000" 
+                    flat-rating="2750"
+                    n2-low-idle="32"
+                    n2-high-idle="65"
+                    n2-max="100"
+                    bsfc="0.65"> 
+      <control-input axis="/controls/engines/engine[1]/condition" control="CONDLEVER"/>
+      <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
+    </turbine-engine>
+  </propeller>
+
+  <!-- #2 engine -->
+  <propeller x="6.49389" y="9.88051" z="-1.30931"
+             mass="2850"
+             moment="600"
+             radius="2.515"
+             cruise-speed="300"
+             cruise-rpm="800"
+             cruise-power="2250"
+             cruise-alt="15000"
+             min-rpm="600"
+             max-rpm="900"
+             fine-stop="0.5"
+             coarse-stop="4.0">
+    <actionpt x="9.32713" y="10.65662" z="-1.30906"/>
+    <control-input axis="/controls/engines/engine[2]/propeller-pitch" control="ADVANCE"/>
+    <turbine-engine eng-power="2750"
+                    eng-rpm="900"
+                    alt="10000" 
+                    flat-rating="2750"
+                    n2-low-idle="32"
+                    n2-high-idle="65"
+                    n2-max="100"
+                    bsfc="0.65"> 
+      <control-input axis="/controls/engines/engine[2]/condition" control="CONDLEVER"/>
+      <control-input axis="/controls/engines/engine[2]/throttle" control="THROTTLE"/>
+    </turbine-engine>
+  </propeller>
+
+  <!-- #3 engine -->
+  <propeller x="7.03542" y="6.26796" z="-1.30719"
+             mass="2850"
+             moment="-600"
+             radius="2.515"
+             cruise-speed="300"
+             cruise-rpm="800"
+             cruise-power="2250"
+             cruise-alt="15000"
+             min-rpm="600"
+             max-rpm="900"
+             fine-stop="0.5"
+             coarse-stop="4.0">
+    <actionpt x="9.17763" y="5.29204" z="-1.30906"/>
+    <control-input axis="/controls/engines/engine[3]/propeller-pitch" control="ADVANCE"/>
+    <turbine-engine eng-power="2750"
+                    eng-rpm="900"
+                    alt="10000" 
+                    flat-rating="2750"
+                    n2-low-idle="32"
+                    n2-high-idle="65"
+                    n2-max="100"
+                    bsfc="0.65"> 
+      <control-input axis="/controls/engines/engine[3]/condition" control="CONDLEVER"/>
+      <control-input axis="/controls/engines/engine[3]/throttle" control="THROTTLE"/>
+    </turbine-engine>
+  </propeller>
+
+  <!-- #4 engine -->
+  <propeller x="7.07755" y="4.26660" z="-1.30719"
+             mass="2850"
+             moment="600"
+             radius="2.515"
+             cruise-speed="300"
+             cruise-rpm="800"
+             cruise-power="2250"
+             cruise-alt="15000"
+             min-rpm="600"
+             max-rpm="900"
+             fine-stop="0.5"
+             coarse-stop="4.0">
+    <actionpt x="9.57299" y="5.29204" z="-1.30906"/>
+    <control-input axis="/controls/engines/engine[4]/propeller-pitch" control="ADVANCE"/>
+    <turbine-engine eng-power="2750"
+                    eng-rpm="900"
+                    alt="10000" 
+                    flat-rating="2750"
+                    n2-low-idle="32"
+                    n2-high-idle="65"
+                    n2-max="100"
+                    bsfc="0.65"> 
+      <control-input axis="/controls/engines/engine[4]/condition" control="CONDLEVER"/>
+      <control-input axis="/controls/engines/engine[4]/throttle" control="THROTTLE"/>
+    </turbine-engine>
+  </propeller>
+
+  <!-- #5 engine -->
+  <propeller x="7.07755" y="-4.26660" z="-1.30719"
+             mass="2850"
+             moment="-600"
+             radius="2.515"
+             cruise-speed="300"
+             cruise-rpm="800"
+             cruise-power="2250"
+             cruise-alt="15000"
+             min-rpm="600"
+             max-rpm="900"
+             fine-stop="0.5"
+             coarse-stop="4.0">
+    <actionpt x="9.57299" y="-5.29204" z="-1.30906"/>
+    <control-input axis="/controls/engines/engine[5]/propeller-pitch" control="ADVANCE"/>
+    <turbine-engine eng-power="2750"
+                    eng-rpm="900"
+                    alt="10000" 
+                    flat-rating="2750"
+                    n2-low-idle="32"
+                    n2-high-idle="65"
+                    n2-max="100"
+                    bsfc="0.65"> 
+      <control-input axis="/controls/engines/engine[5]/condition" control="CONDLEVER"/>
+      <control-input axis="/controls/engines/engine[5]/throttle" control="THROTTLE"/>
+    </turbine-engine>
+  </propeller>
+
+  <!-- #6 engine -->
+  <propeller x="7.03542" y="-6.26796" z="-1.30719"
+             mass="2850"
+             moment="600"
+             radius="2.515"
+             cruise-speed="300"
+             cruise-rpm="800"
+             cruise-power="2250"
+             cruise-alt="15000"
+             min-rpm="600"
+             max-rpm="900"
+             fine-stop="0.5"
+             coarse-stop="4.0">
+    <actionpt x="9.17763" y="-5.29204" z="-1.30906"/>
+    <control-input axis="/controls/engines/engine[6]/propeller-pitch" control="ADVANCE"/>
+    <turbine-engine eng-power="2750"
+                    eng-rpm="900"
+                    alt="10000" 
+                    flat-rating="2750"
+                    n2-low-idle="32"
+                    n2-high-idle="65"
+                    n2-max="100"
+                    bsfc="0.65"> 
+      <control-input axis="/controls/engines/engine[6]/condition" control="CONDLEVER"/>
+      <control-input axis="/controls/engines/engine[6]/throttle" control="THROTTLE"/>
+    </turbine-engine>
+  </propeller>
+
+  <!-- #7 engine -->
+  <propeller x="6.49389" y="-9.88051" z="-1.30931"
+             mass="2850"
+             moment="-600"
+             radius="2.515"
+             cruise-speed="300"
+             cruise-rpm="800"
+             cruise-power="2250"
+             cruise-alt="15000"
+             min-rpm="600"
+             max-rpm="900"
+             fine-stop="0.5"
+             coarse-stop="4.0">
+    <actionpt x="9.32713" y="-10.65662" z="-1.30906"/>
+    <control-input axis="/controls/engines/engine[7]/propeller-pitch" control="ADVANCE"/>
+    <turbine-engine eng-power="2750"
+                    eng-rpm="900"
+                    alt="10000" 
+                    flat-rating="2750"
+                    n2-low-idle="32"
+                    n2-high-idle="65"
+                    n2-max="100"
+                    bsfc="0.65"> 
+      <control-input axis="/controls/engines/engine[7]/condition" control="CONDLEVER"/>
+      <control-input axis="/controls/engines/engine[7]/throttle" control="THROTTLE"/>
+    </turbine-engine>
+  </propeller>
+
+  <!-- #8 engine -->
+  <propeller x="6.46777" y="-11.46104" z="-1.30931"
+             mass="2850"
+             moment="600"
+             radius="2.515"
+             cruise-speed="300"
+             cruise-rpm="800"
+             cruise-power="2250"
+             cruise-alt="15000"
+             min-rpm="600"
+             max-rpm="900"
+             fine-stop="0.5"
+             coarse-stop="4.0">
+    <actionpt x="8.93177" y="-10.65662" z="-1.30906"/>
+    <control-input axis="/controls/engines/engine[8]/propeller-pitch" control="ADVANCE"/>
+    <turbine-engine eng-power="2750"
+                    eng-rpm="900"
+                    alt="10000" 
+                    flat-rating="2750"
+                    n2-low-idle="32"
+                    n2-high-idle="65"
+                    n2-max="100"
+                    bsfc="0.65"> 
+      <control-input axis="/controls/engines/engine[8]/condition" control="CONDLEVER"/>
+      <control-input axis="/controls/engines/engine[8]/throttle" control="THROTTLE"/>
+    </turbine-engine>
+  </propeller>
+
+  <!-- #9 engine -->
+  <propeller x="5.86323" y="-15.85412" z="-1.24129"
+             mass="2850"
+             moment="600"
+             radius="2.515"
+             cruise-speed="300"
+             cruise-rpm="800"
+             cruise-power="2250"
+             cruise-alt="15000"
+             min-rpm="600"
+             max-rpm="900"
+             fine-stop="0.5"
+             coarse-stop="4.0">
+    <actionpt x="8.37137" y="-15.83523" z="-1.30906"/>
+    <control-input axis="/controls/engines/engine[9]/propeller-pitch" control="ADVANCE"/>
+    <turbine-engine eng-power="2750"
+                    eng-rpm="900"
+                    alt="10000" 
+                    flat-rating="2750"
+                    n2-low-idle="32"
+                    n2-high-idle="65"
+                    n2-max="100"
+                    bsfc="0.65"> 
+      <control-input axis="/controls/engines/engine[9]/condition" control="CONDLEVER"/>
+      <control-input axis="/controls/engines/engine[9]/throttle" control="THROTTLE"/>
+    </turbine-engine>
+  </propeller>
+
+  <!-- Buck notes:
+  
+         Compressions should be kept well under 1 meter, otherwise YASim's stupid gear drag
+         calculations will create absurd, enormous drag effects that will screw-up the solution.
+
+         These are crude guesses for fuselage contact points, but seem to work OK.
+  -->
+  <!-- Main fuselage -->
+  <!-- 0 Noze -->
+  <gear x="11" y="0" z="-5.5"
+        compression="0.5"
+        sfric="0.5"
+        dfric="0.3"
+        damp="0.9"
+        spring="1.5"
+        speed-planing="30"
+        spring-factor-not-planing="0.7"
+        reduce-friction-by-extension="2"
+        on-water="1"
+        on-solid="0">
+  </gear>
+
+  <gear x="2" y="0" z="-5.5"
+        compression="0.5"
+        sfric="0.5"
+        dfric="0.4"
+        damp="0.9"
+        spring="1.5"
+        speed-planing="30"
+        spring-factor-not-planing="0.5"
+        reduce-friction-by-extension="2"
+        on-water="1"
+        on-solid="0">
+  </gear>
+
+  <!-- 2 Tail -->
+  <gear x="-7" y="0" z="-5.5"
+        compression="0.4"
+        sfric="0.5"
+        dfric="0.4"
+        damp="0.6"
+        spring="0.9"
+        speed-planing="30"
+        spring-factor-not-planing="0.5"
+        reduce-friction-by-extension="2"
+        on-water="1"
+        on-solid="0">
+  </gear>
+
+  <!-- 3 wing floats Left -->
+  <gear x="1" y="29.6" z="-4.5"
+        compression="0.3"
+        sfric="0.5"
+        dfric="0.2"
+        damp="0.1"
+        spring="0.5"
+        ignored-by-solver="1"
+        speed-planing="30"
+        spring-factor-not-planing="0.9"
+        reduce-friction-by-extension="0.8"
+        on-water="1"
+        on-solid="0">
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        <control-output control="EXTEND" prop="/gear/gear[3]/position-norm"/>
+        <control-speed control="EXTEND" transition-time="5.1"/>
+  </gear>
+
+  <!-- 4 wing floats right -->
+  <gear x="1" y="-29.6" z="-4.5"
+        compression="0.3"
+        sfric="0.5"
+        dfric="0.2"
+        damp="0.1"
+        spring="0.5"
+        ignored-by-solver="1"
+        speed-planing="30"
+        spring-factor-not-planing="0.9"
+        reduce-friction-by-extension="0.8"
+        on-water="1"
+        on-solid="0">
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        <control-output control="EXTEND" prop="/gear/gear[4]/position-norm"/>
+        <control-speed control="EXTEND" transition-time="5.1"/>
+  </gear>
+
+  <!-- 63645.3 l = 140311.5 lb in 4 tank with 35077.87 lb each -->
+  <tank x="4.1" y=" 20" z="-1.30806" capacity="35077.87"/>
+  <tank x="4.1" y="  8" z="-1.30806" capacity="35077.87"/>
+  <tank x="4.1" y=" -8" z="-1.30806" capacity="35077.87"/>
+  <tank x="4.1" y="-20" z="-1.30806" capacity="35077.87"/>
+
+  <!-- Buck notes:
+  
+         CG range, 24-38% MAC. Flight documents suggest a CG of 32% should be reasonable for YASim 
+         24% x = 4.900
+         32% x = 4.225
+         38% x = 3.720
+  -->
+
+  <!-- <ballast x="15" y="0" z="0" mass="45000"/> -->
+  <!-- Helijah : I move the CG backwards because the airplane tends to go down :(  -->
+  <ballast x="15" y="0" z="0" mass="18000"/>
+
+</airplane>

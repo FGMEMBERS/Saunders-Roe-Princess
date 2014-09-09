@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList> 
+
+  <!-- Pilot seat -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -20.86403 </x-m>
+      <y-m>  -0.45400 </y-m>
+      <z-m>  -2.35556 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Copilot seat -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -20.86403 </x-m>
+      <y-m>   0.45400 </y-m>
+      <z-m>  -2.35556 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -19.18214 </x-m>
+      <y-m>  -0.80433 </y-m>
+      <z-m>  -2.35556 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -19.49921 </x-m>
+      <y-m>   0.39000 </y-m>
+      <z-m>  -2.35556 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -17.78770 </x-m>
+      <y-m>   0.54048 </y-m>
+      <z-m>  -2.35556 </z-m>
+      <heading-deg> -90 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -18.14953 </x-m>
+      <y-m>  -0.79320 </y-m>
+      <z-m>  -2.35556 </z-m>
+      <heading-deg> 90 </heading-deg>
+    </offsets>
+  </model>
+  
+  <!-- First floor -->
+  <!-- Left -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -15.43440 </x-m>
+      <y-m>  -1.39000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -15.43440 </x-m>
+      <y-m>  -0.93000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -15.43440 </x-m>
+      <y-m>  -0.47000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -14.44440 </x-m>
+      <y-m>  -1.39000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -14.44440 </x-m>
+      <y-m>  -0.93000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -14.44440 </x-m>
+      <y-m>  -0.47000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -13.45440 </x-m>
+      <y-m>  -1.39000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -13.45440 </x-m>
+      <y-m>  -0.93000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -13.45440 </x-m>
+      <y-m>  -0.47000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -12.46440 </x-m>
+      <y-m>  -1.39000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -12.46440 </x-m>
+      <y-m>  -0.93000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -12.46440 </x-m>
+      <y-m>  -0.47000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -11.47440 </x-m>
+      <y-m>  -1.39000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -11.47440 </x-m>
+      <y-m>  -0.93000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -11.47440 </x-m>
+      <y-m>  -0.47000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -10.48440 </x-m>
+      <y-m>  -1.39000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -10.48440 </x-m>
+      <y-m>  -0.93000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -10.48440 </x-m>
+      <y-m>  -0.47000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Right -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -15.43440 </x-m>
+      <y-m>   1.39000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -15.43440 </x-m>
+      <y-m>   0.93000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -15.43440 </x-m>
+      <y-m>   0.47000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -14.44440 </x-m>
+      <y-m>   1.39000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -14.44440 </x-m>
+      <y-m>   0.93000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -14.44440 </x-m>
+      <y-m>   0.47000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -13.45440 </x-m>
+      <y-m>   1.39000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -13.45440 </x-m>
+      <y-m>   0.93000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -13.45440 </x-m>
+      <y-m>   0.47000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -12.46440 </x-m>
+      <y-m>   1.39000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -12.46440 </x-m>
+      <y-m>   0.93000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -12.46440 </x-m>
+      <y-m>   0.47000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -11.47440 </x-m>
+      <y-m>   1.39000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -11.47440 </x-m>
+      <y-m>   0.93000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -11.47440 </x-m>
+      <y-m>   0.47000 </y-m>
+      <z-m>  -4.64000 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Second floor -->
+  <!-- Left -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -14.16668 </x-m>
+      <y-m>  -0.96000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -14.16668 </x-m>
+      <y-m>  -0.50000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -13.17668 </x-m>
+      <y-m>  -0.96000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -13.17668 </x-m>
+      <y-m>  -0.50000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -12.18668 </x-m>
+      <y-m>  -0.96000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -12.18668 </x-m>
+      <y-m>  -0.50000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -11.19668 </x-m>
+      <y-m>  -0.96000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -11.19668 </x-m>
+      <y-m>  -0.50000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -10.20668 </x-m>
+      <y-m>  -0.96000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -10.20668 </x-m>
+      <y-m>  -0.50000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -9.21668 </x-m>
+      <y-m> -0.96000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -9.21668 </x-m>
+      <y-m> -0.50000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -8.22668 </x-m>
+      <y-m> -0.96000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -8.22668 </x-m>
+      <y-m> -0.50000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -7.23668 </x-m>
+      <y-m> -0.96000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -7.23668 </x-m>
+      <y-m> -0.50000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -7.23668 </x-m>
+      <y-m> -0.04000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -14.16668 </x-m>
+      <y-m>   0.96000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -14.16668 </x-m>
+      <y-m>   0.50000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -13.17668 </x-m>
+      <y-m>   0.96000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -13.17668 </x-m>
+      <y-m>   0.50000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -12.18668 </x-m>
+      <y-m>   0.96000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -12.18668 </x-m>
+      <y-m>   0.50000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -11.19668 </x-m>
+      <y-m>   0.96000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> -11.19668 </x-m>
+      <y-m>   0.50000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Left rear -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>   0.68332 </x-m>
+      <y-m>  -1.03000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  0.68332 </x-m>
+      <y-m> -0.57000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>   1.98333 </x-m>
+      <y-m>  -1.03000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>   1.98333 </x-m>
+      <y-m>  -0.57000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>   3.28333 </x-m>
+      <y-m>  -1.03000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>   3.28333 </x-m>
+      <y-m>  -0.57000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>   4.58333 </x-m>
+      <y-m>  -1.03000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>   4.58333 </x-m>
+      <y-m>  -0.57000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>   5.88333 </x-m>
+      <y-m>  -1.03000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>   5.88333 </x-m>
+      <y-m>  -0.57000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>   8.13333 </x-m>
+      <y-m>  -1.03000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>   9.47333 </x-m>
+      <y-m>  -0.90000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  10.86333 </x-m>
+      <y-m>  -0.83000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  12.24333 </x-m>
+      <y-m>  -0.66000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  13.65333 </x-m>
+      <y-m>  -0.47000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  13.65333 </x-m>
+      <y-m>   0.00000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  13.65333 </x-m>
+      <y-m>   0.47000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Right rear -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>   0.68332 </x-m>
+      <y-m>   1.03000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  0.68332 </x-m>
+      <y-m>  0.57000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>   1.98332 </x-m>
+      <y-m>   1.03000 </y-m>
+      <z-m>  -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  1.98332 </x-m>
+      <y-m>  0.57000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  3.28332 </x-m>
+      <y-m>  1.03000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  3.28332 </x-m>
+      <y-m>  0.57000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  4.58332 </x-m>
+      <y-m>  1.03000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  4.58332 </x-m>
+      <y-m>  0.57000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  8.13333 </x-m>
+      <y-m>  1.00000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  8.13333 </x-m>
+      <y-m>  0.54000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  9.47333 </x-m>
+      <y-m>  0.94000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m>  9.47333 </x-m>
+      <y-m>  0.48000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> 10.86333 </x-m>
+      <y-m>  0.70000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> 10.86333 </x-m>
+      <y-m>  0.24000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> 12.24333 </x-m>
+      <y-m>  0.20000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/Seats/seatP.xml</path>
+    <offsets>
+      <x-m> 12.24333 </x-m>
+      <y-m>  0.66000 </y-m>
+      <z-m> -2.29841 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>

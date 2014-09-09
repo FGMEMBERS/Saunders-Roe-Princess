@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>princess.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Saunders-Roe-Princess/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
+    </load>
+
+    <unload>
+      livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
+    </unload>
+  </nasal>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fuselage</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteBG</object-name>
+    <object-name>porteBD</object-name>
+    <object-name>coque</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG1</object-name>
+    <object-name>aileronG2</object-name>
+    <object-name>aileronG3</object-name>
+    <object-name>aileronG4</object-name>
+    <object-name>aileronD1</object-name>
+    <object-name>aileronD2</object-name>
+    <object-name>aileronD3</object-name>
+    <object-name>aileronD4</object-name>
+    <object-name>voletG1</object-name>
+    <object-name>voletG2</object-name>
+    <object-name>voletG3</object-name>
+    <object-name>voletD1</object-name>
+    <object-name>voletD2</object-name>
+    <object-name>voletD3</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>direction</object-name>
+    <object-name>profondeurG</object-name>
+    <object-name>profondeurD</object-name>
+    <object-name>flotteurG</object-name>
+    <object-name>coqueG</object-name>
+    <object-name>flotteurD</object-name>
+    <object-name>coqueD</object-name>
+    <object-name>bolGE</object-name>
+    <object-name>bolGC1</object-name>
+    <object-name>bolGC2</object-name>
+    <object-name>bolGI1</object-name>
+    <object-name>bolGI2</object-name>
+    <object-name>bolDI1</object-name>
+    <object-name>bolDI2</object-name>
+    <object-name>bolDC1</object-name>
+    <object-name>bolDC2</object-name>
+    <object-name>bolDE</object-name>
+    <object-name>antennes</object-name>
+    
+    <object-name>trous</object-name>
+    <object-name>echappes</object-name>
+    
+    <!-- transparent objects -->
+    <object-name>vitres</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteBG</object-name>
+    <object-name>porteBD</object-name>
+    <object-name>coque</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG1</object-name>
+    <object-name>aileronG2</object-name>
+    <object-name>aileronG3</object-name>
+    <object-name>aileronG4</object-name>
+    <object-name>aileronD1</object-name>
+    <object-name>aileronD2</object-name>
+    <object-name>aileronD3</object-name>
+    <object-name>aileronD4</object-name>
+    <object-name>voletG1</object-name>
+    <object-name>voletG2</object-name>
+    <object-name>voletG3</object-name>
+    <object-name>voletD1</object-name>
+    <object-name>voletD2</object-name>
+    <object-name>voletD3</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>direction</object-name>
+    <object-name>profondeurG</object-name>
+    <object-name>profondeurD</object-name>
+    <object-name>flotteurG</object-name>
+    <object-name>coqueG</object-name>
+    <object-name>flotteurD</object-name>
+    <object-name>coqueD</object-name>
+    <object-name>bolGE</object-name>
+    <object-name>bolGC1</object-name>
+    <object-name>bolGC2</object-name>
+    <object-name>bolGI1</object-name>
+    <object-name>bolGI2</object-name>
+    <object-name>bolDI1</object-name>
+    <object-name>bolDI2</object-name>
+    <object-name>bolDC1</object-name>
+    <object-name>bolDC2</object-name>
+    <object-name>bolDE</object-name>
+    <object-name>antennes</object-name>
+    
+    <object-name>trous</object-name>
+    <object-name>echappes</object-name>
+    
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitres</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <object-name>fuselage</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteBG</object-name>
+    <object-name>porteBD</object-name>
+    <object-name>coque</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG1</object-name>
+    <object-name>aileronG2</object-name>
+    <object-name>aileronG3</object-name>
+    <object-name>aileronG4</object-name>
+    <object-name>aileronD1</object-name>
+    <object-name>aileronD2</object-name>
+    <object-name>aileronD3</object-name>
+    <object-name>aileronD4</object-name>
+    <object-name>voletG1</object-name>
+    <object-name>voletG2</object-name>
+    <object-name>voletG3</object-name>
+    <object-name>voletD1</object-name>
+    <object-name>voletD2</object-name>
+    <object-name>voletD3</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>direction</object-name>
+    <object-name>profondeurG</object-name>
+    <object-name>profondeurD</object-name>
+    <object-name>flotteurG</object-name>
+    <object-name>coqueG</object-name>
+    <object-name>flotteurD</object-name>
+    <object-name>coqueD</object-name>
+    <object-name>bolGE</object-name>
+    <object-name>bolGC1</object-name>
+    <object-name>bolGC2</object-name>
+    <object-name>bolGI1</object-name>
+    <object-name>bolGI2</object-name>
+    <object-name>bolDI1</object-name>
+    <object-name>bolDI2</object-name>
+    <object-name>bolDC1</object-name>
+    <object-name>bolDC2</object-name>
+    <object-name>bolDE</object-name>
+    <object-name>antennes</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Effects/model-combined-deferred</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>fuselage</object-name>
+    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
+    <object-name>porteBG</object-name>
+    <object-name>porteBD</object-name>
+    <object-name>coque</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG1</object-name>
+    <object-name>aileronG2</object-name>
+    <object-name>aileronG3</object-name>
+    <object-name>aileronG4</object-name>
+    <object-name>aileronD1</object-name>
+    <object-name>aileronD2</object-name>
+    <object-name>aileronD3</object-name>
+    <object-name>aileronD4</object-name>
+    <object-name>voletG1</object-name>
+    <object-name>voletG2</object-name>
+    <object-name>voletG3</object-name>
+    <object-name>voletD1</object-name>
+    <object-name>voletD2</object-name>
+    <object-name>voletD3</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>direction</object-name>
+    <object-name>profondeurG</object-name>
+    <object-name>profondeurD</object-name>
+    <object-name>flotteurG</object-name>
+    <object-name>coqueG</object-name>
+    <object-name>flotteurD</object-name>
+    <object-name>coqueD</object-name>
+    <object-name>bolGE</object-name>
+    <object-name>bolGC1</object-name>
+    <object-name>bolGC2</object-name>
+    <object-name>bolGI1</object-name>
+    <object-name>bolGI2</object-name>
+    <object-name>bolDI1</object-name>
+    <object-name>bolDI2</object-name>
+    <object-name>bolDC1</object-name>
+    <object-name>bolDC2</object-name>
+    <object-name>bolDE</object-name>
+    <object-name>antennes</object-name>
+  </effect>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitres</object-name>
+  </effect>
+
+  <!-- Interieur -->
+  <model>
+    <name>Interieur</name>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Interior/interior.xml</path>
+  </model> 
+
+  <!-- For Rembrandt -->
+  <animation>
+    <type>noshadow</type>
+    <object-name>Interieur</object-name>
+  </animation>
+
+  <!-- Trails -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Effects/trail/trail0.xml</path>
+    <offsets>
+      <x-m>   0.78512 </x-m>
+      <y-m> -15.90069 </y-m>
+      <z-m>  -1.03261 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Effects/trail/trail1.xml</path>
+    <offsets>
+      <x-m>   0.78512 </x-m>
+      <y-m> -10.97991 </y-m>
+      <z-m>  -1.05411 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Effects/trail/trail2.xml</path>
+    <offsets>
+      <x-m>   0.78512 </x-m>
+      <y-m> -10.26124 </y-m>
+      <z-m>  -1.05411 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Effects/trail/trail3.xml</path>
+    <offsets>
+      <x-m>  0.97980 </x-m>
+      <y-m> -5.64268 </y-m>
+      <z-m> -1.04213 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Effects/trail/trail4.xml</path>
+    <offsets>
+      <x-m>  0.97980 </x-m>
+      <y-m> -4.92401 </y-m>
+      <z-m> -1.04213 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Effects/trail/trail5.xml</path>
+    <offsets>
+      <x-m>  0.97980 </x-m>
+      <y-m>  4.92401 </y-m>
+      <z-m> -1.04213 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Effects/trail/trail6.xml</path>
+    <offsets>
+      <x-m>  0.97980 </x-m>
+      <y-m>  5.64268 </y-m>
+      <z-m> -1.04213 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Effects/trail/trail7.xml</path>
+    <offsets>
+      <x-m>  0.78512 </x-m>
+      <y-m> 10.26124 </y-m>
+      <z-m> -1.05411 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Effects/trail/trail8.xml</path>
+    <offsets>
+      <x-m>  0.78512 </x-m>
+      <y-m> 10.97991 </y-m>
+      <z-m> -1.05411 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Effects/trail/trail9.xml</path>
+    <offsets>
+      <x-m>  0.78512 </x-m>
+      <y-m> 15.90069 </y-m>
+      <z-m> -1.03261 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Trainée Centrale -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Effects/waves/wake.xml</path>
+    <offsets>
+      <x-m> -4.29991 </x-m>
+      <y-m> -2.45361 </y-m>
+      <z-m> -7.42669 </z-m>
+      <pitch-deg> -90 </pitch-deg>
+    </offsets>
+  </model> 
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Effects/waves/wake.xml</path>
+    <offsets>
+      <x-m> -4.29991 </x-m>
+      <y-m>  2.45361 </y-m>
+      <z-m> -7.42669 </z-m>
+      <pitch-deg> -90 </pitch-deg>
+    </offsets>
+  </model> 
+
+  <!-- Trainée flotteur gauche -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Effects/waves/wakeG.xml</path>
+    <offsets>
+      <x-m>  -0.39199 </x-m>
+      <y-m> -29.66737 </y-m>
+      <z-m>  -6.00000 </z-m>
+      <pitch-deg> -90 </pitch-deg>
+    </offsets>
+  </model> 
+
+  <!-- Trainée flotteur droite -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/Effects/waves/wakeD.xml</path>
+    <offsets>
+      <x-m> -0.39199 </x-m>
+      <y-m> 29.66737 </y-m>
+      <z-m> -6.00000 </z-m>
+      <pitch-deg> -90 </pitch-deg>
+    </offsets>
+  </model> 
+  
+  <!-- Les hélices -->
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/propellers/propeller0.xml</path>   
+    <offsets>
+      <x-m>  -8.37137 </x-m>
+      <y-m> -15.83523 </y-m>
+      <z-m>  -1.30906 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/propellers/propeller1.xml</path>   
+    <offsets>
+      <x-m>  -8.93177 </x-m>
+      <y-m> -10.65662 </y-m>
+      <z-m>  -1.30906 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/propellers/propeller2.xml</path>   
+    <offsets>
+      <x-m>  -9.32713 </x-m>
+      <y-m> -10.65662 </y-m>
+      <z-m>  -1.30906 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/propellers/propeller3.xml</path>   
+    <offsets>
+      <x-m> -9.17763 </x-m>
+      <y-m> -5.29204 </y-m>
+      <z-m> -1.30906 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/propellers/propeller4.xml</path>   
+    <offsets>
+      <x-m> -9.57299 </x-m>
+      <y-m> -5.29204 </y-m>
+      <z-m> -1.30906 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/propellers/propeller5.xml</path>   
+    <offsets>
+      <x-m> -9.57299 </x-m>
+      <y-m>  5.29204 </y-m>
+      <z-m> -1.30906 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/propellers/propeller6.xml</path>   
+    <offsets>
+      <x-m> -9.17763 </x-m>
+      <y-m>  5.29204 </y-m>
+      <z-m> -1.30906 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/propellers/propeller7.xml</path>   
+    <offsets>
+      <x-m> -9.32713 </x-m>
+      <y-m> 10.65662 </y-m>
+      <z-m> -1.30906 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/propellers/propeller8.xml</path>   
+    <offsets>
+      <x-m> -8.93177 </x-m>
+      <y-m> 10.65662 </y-m>
+      <z-m> -1.30906 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Saunders-Roe-Princess/Models/propellers/propeller9.xml</path>   
+    <offsets>
+      <x-m> -8.37137 </x-m>
+      <y-m> 15.83523 </y-m>
+      <z-m> -1.30906 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>direction</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> -15 </factor>
+    <axis> 
+      <x1-m> 19.97328 </x1-m> 
+      <y1-m>  0.00000 </y1-m>
+      <z1-m>  0.92369 </z1-m>
+      <x2-m> 19.84984 </x2-m>
+      <y2-m>  0.00000 </y2-m> 
+      <z2-m>  7.66669 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de profondeur -->
+  <animation>
+    <type>rotate</type>
+    <object-name>profondeurG</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 15 </factor>
+    <axis> 
+      <x1-m>  20.12784 </x1-m> 
+      <y1-m> -11.04209 </y1-m>
+      <z1-m>   2.80607 </z1-m>
+      <x2-m>  20.30565 </x2-m>
+      <y2-m>  -0.97397 </y2-m> 
+      <z2-m>   0.66290 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>profondeurD</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 15 </factor>
+    <axis> 
+      <x1-m> 20.30565 </x1-m>
+      <y1-m>  0.97397 </y1-m> 
+      <z1-m>  0.66290 </z1-m>
+      <x2-m> 20.12784 </x2-m> 
+      <y2-m> 11.04209 </y2-m>
+      <z2-m>  2.80607 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Animations des ailerons -->
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronG1</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> 15 </factor>
+    <axis> 
+      <x1-m>   0.42739 </x1-m> 
+      <y1-m> -31.69461 </y1-m>
+      <z1-m>  -1.15156 </z1-m>
+      <x2-m>   0.43881 </x2-m>
+      <y2-m> -28.80009 </y2-m> 
+      <z2-m>  -1.20957 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronG2</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> 15 </factor>
+    <axis>
+      <x1-m>   0.43881 </x1-m>
+      <y1-m> -28.80009 </y1-m> 
+      <z1-m>  -1.20957 </z1-m>
+      <x2-m>   0.45023 </x2-m>
+      <y2-m> -25.90557 </y2-m>
+      <z2-m>  -1.26758 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronG3</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> 15 </factor>
+    <axis>
+      <x1-m>   0.45023 </x1-m>
+      <y1-m> -25.90557 </y1-m>
+      <z1-m>  -1.26758 </z1-m>
+      <x2-m>   0.46319 </x2-m>
+      <y2-m> -22.62162 </y2-m> 
+      <z2-m>  -1.33340 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronG4</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> 15 </factor>
+    <axis>
+      <x1-m>   0.46319 </x1-m>
+      <y1-m> -22.62162 </y1-m> 
+      <z1-m>  -1.33340 </z1-m>
+      <x2-m>   0.47829 </x2-m>
+      <y2-m> -18.79400 </y2-m>
+      <z2-m>  -1.41011 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronD4</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> 15 </factor>
+    <axis>
+      <x1-m>  0.47829 </x1-m>
+      <y1-m> 18.79400 </y1-m>
+      <z1-m> -1.41011 </z1-m>
+      <x2-m>  0.46319 </x2-m>
+      <y2-m> 22.62162 </y2-m> 
+      <z2-m> -1.33340 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronD3</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> 15 </factor>
+    <axis>
+      <x1-m>  0.46319 </x1-m>
+      <y1-m> 22.62162 </y1-m> 
+      <z1-m> -1.33340 </z1-m>
+      <x2-m>  0.45023 </x2-m>
+      <y2-m> 25.90557 </y2-m>
+      <z2-m> -1.26758 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronD2</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> 15 </factor>
+    <axis>
+      <x1-m>  0.45023 </x1-m>
+      <y1-m> 25.90557 </y1-m>
+      <z1-m> -1.26758 </z1-m>
+      <x2-m>  0.43881 </x2-m>
+      <y2-m> 28.80009 </y2-m> 
+      <z2-m> -1.20957 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronD1</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> 15 </factor>
+    <axis> 
+      <x1-m>  0.43881 </x1-m>
+      <y1-m> 28.80009 </y1-m> 
+      <z1-m> -1.20957 </z1-m>
+      <x2-m>  0.42739 </x2-m> 
+      <y2-m> 31.69461 </y2-m>
+      <z2-m> -1.15156 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Volets -->
+  <animation>
+    <type>rotate</type>
+    <object-name>voletG1</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 55 </factor>
+    <axis>
+      <x1-m>   0.27829 </x1-m>
+      <y1-m> -15.85592 </y1-m> 
+      <z1-m>  -1.72466 </z1-m>
+      <x2-m>   0.42595 </x2-m>
+      <y2-m> -10.65398 </y2-m>
+      <z2-m>  -1.85820 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>voletG2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 55 </factor>
+    <axis>
+      <x1-m>   0.42595 </x1-m>
+      <y1-m> -10.65398 </y1-m>
+      <z1-m>  -1.85820 </z1-m>
+      <x2-m>   0.57827 </x2-m>
+      <y2-m>  -5.29204 </y2-m> 
+      <z2-m>  -1.98724 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>voletG3</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 55 </factor>
+    <axis>
+      <x1-m>  0.57827 </x1-m>
+      <y1-m> -5.29204 </y1-m> 
+      <z1-m> -1.98724 </z1-m>
+      <x2-m>  0.58406 </x2-m>
+      <y2-m> -1.67963 </y2-m>
+      <z2-m> -1.99574 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>voletD3</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 55 </factor>
+    <axis>
+      <x1-m>  0.58406 </x1-m>
+      <y1-m>  1.67963 </y1-m>
+      <z1-m> -1.99574 </z1-m>
+      <x2-m>  0.57827 </x2-m>
+      <y2-m>  5.29204 </y2-m> 
+      <z2-m> -1.98724 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>voletD2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 55 </factor>
+    <axis>
+      <x1-m>  0.57827 </x1-m>
+      <y1-m>  5.29204 </y1-m> 
+      <z1-m> -1.98724 </z1-m>
+      <x2-m>  0.42595 </x2-m>
+      <y2-m> 10.65398 </y2-m>
+      <z2-m> -1.85820 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>voletD1</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 55 </factor>
+    <axis>
+      <x1-m>  0.42595 </x1-m>
+      <y1-m> 10.65398 </y1-m>
+      <z1-m> -1.85820 </z1-m>
+      <x2-m>  0.27829 </x2-m>
+      <y2-m> 15.85592 </y2-m> 
+      <z2-m> -1.72466 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Rentré du flotteur gauche -->
+  <animation>
+    <name>FlotteurGauche</name>
+    <object-name>flotteurG</object-name>
+    <object-name>coqueG</object-name>
+  </animation>
+  
+  <animation>
+    <name>FlotteurDroit</name>
+    <object-name>flotteurD</object-name>
+    <object-name>coqueD</object-name>
+  </animation>
+  
+  <!-- Montée/Descente des flotteurs -->
+  <animation>
+    <type>rotate</type>
+    <object-name>FlotteurGauche</object-name>
+    <property>gear/gear[3]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> -90 </dep></entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  -1.21440 </x-m>
+      <y-m> -29.66066 </y-m>
+      <z-m>  -1.08060 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Rentré du flotteur droite -->
+  <animation>
+    <type>rotate</type>
+    <object-name>FlotteurDroit</object-name>
+    <property>gear/gear[4]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 90 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -1.21440 </x-m>
+      <y-m> 29.66066 </y-m>
+      <z-m> -1.08060 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- animation des portes -->
+  <animation>
+    <type>pick</type>
+    <object-name>porteAG</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.pag.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>porteAG</object-name>
+    <property>sim/model/door-positions/pag/position-norm</property>
+    <factor> -170 </factor>
+    <axis>
+      <x1-m> -9.81246 </x1-m>
+      <y1-m> -1.91861 </y1-m> 
+      <z1-m> -4.80626 </z1-m>
+      <x2-m> -9.81246 </x2-m>
+      <y2-m> -1.94500 </y2-m>
+      <z2-m> -4.51012 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>porteAD</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.pad.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>porteAD</object-name>
+    <property>sim/model/door-positions/pad/position-norm</property>
+    <factor>  170 </factor>
+    <axis>
+      <x1-m> -9.81246 </x1-m>
+      <y1-m>  1.91861 </y1-m> 
+      <z1-m> -4.80626 </z1-m>
+      <x2-m> -9.81246 </x2-m>
+      <y2-m>  1.94500 </y2-m>
+      <z2-m> -4.51012 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>porteBG</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.pbg.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>porteBG</object-name>
+    <property>sim/model/door-positions/pbg/position-norm</property>
+    <factor> 170 </factor>
+    <axis>
+      <x1-m>  8.08938 </x1-m>
+      <y1-m> -1.69906 </y1-m> 
+      <z1-m> -4.14057 </z1-m>
+      <x2-m>  8.08938 </x2-m>
+      <y2-m> -1.63195 </y2-m>
+      <z2-m> -3.72433 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>porteBD</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.pbd.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>porteBD</object-name>
+    <property>sim/model/door-positions/pbd/position-norm</property>
+    <factor> -170 </factor>
+    <axis>
+      <x1-m>  8.08938 </x1-m>
+      <y1-m>  1.69906 </y1-m> 
+      <z1-m> -4.14057 </z1-m>
+      <x2-m>  8.08938 </x2-m>
+      <y2-m>  1.63195 </y2-m>
+      <z2-m> -3.72433 </z2-m>
+    </axis>
+  </animation>
+
+</PropertyList>

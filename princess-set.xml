@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- <PropertyList include="princess-jsbsim-cnf.xml"> -->
+<PropertyList include="princess-yasim-cnf.xml">
+
+  <sim>
+
+    <description>Saunders Roe Princess (YASim)</description>
+    <author>Emmanuel BARANGER (3D), Buckaroo (FDM)</author>
+    <status>Dev</status>
+    <aircraft-version>1.3</aircraft-version>
+
+    <rating>
+      <FDM type="int">     4 </FDM>
+      <systems type="int"> 1 </systems>
+      <cockpit type="int"> 2 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
+  </sim>
+
+</PropertyList>
